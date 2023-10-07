@@ -5,6 +5,7 @@ public class Constants {
 	public  final static String Login_Page_title ="Account Login";
 	public static final String Current_url = "https://naveenautomationlabs.com/opencart/index.php?route=account/login";
 	public static final String ACCOUNTS_PAGE_TITLE = "My Account";
+	public static String Macbook = "Macbook";
 	public static int Default_Timeout = 10;
 	public static String password_present = "True";
 	public static int timeout =10;

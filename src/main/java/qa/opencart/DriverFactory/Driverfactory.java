@@ -22,7 +22,8 @@ public class Driverfactory {
 
 	public WebDriver init_driver(Properties prop) {
 		
-		String browsername = prop.getProperty("browser").trim();
+		//String browsername = prop.getProperty("browser").trim();
+		String browsername ="chrome";
 		//System.out.println("your browser name is " + browsername);
 		if (browsername.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
@@ -35,7 +36,7 @@ public class Driverfactory {
 		}
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.get(prop.getProperty("url").trim());
+		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
 
 		return driver;
 	}

@@ -16,7 +16,7 @@ public class LoginPageTest extends BaseTest{
 	public WebDriver driver;
 	public Properties prop;
 
-	@Test
+	@Test(priority=1)
 	public void LoginPagetitletest()
 	{
 		String acttile = loginpage.getloginpageTitle();
@@ -26,14 +26,15 @@ public class LoginPageTest extends BaseTest{
 		
 	}
 
-	@Test
+	@Test(priority=2)
 	public void urltest()
 	{
 		String urlTest = loginpage.getpageurl();
 		System.out.println("page title is " +urlTest);	
 		Assert.assertEquals(urlTest, Constants.Current_url);
 	}
-	@Test
+	
+	@Test(priority=3)
 	public void passwordpageurl()
 	{
 		Boolean urlTest = loginpage.isforgetPwdlink();

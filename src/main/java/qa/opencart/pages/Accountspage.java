@@ -48,9 +48,15 @@ public class Accountspage {
 	}
 	
 	
-	public void islogoutExist()
+	public Boolean islogoutExist()
 	{
-		eleutil.doisdisplay(logoutlink);
+		return eleutil.doisdisplay(logoutlink);
+	}
+
+	public void getsearch() {
+	
+		eleutil.dosendkeys(name, Constants.Macbook);
+		
 	}
 	
 
